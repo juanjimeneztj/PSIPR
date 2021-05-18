@@ -1,9 +1,6 @@
 <?php
-require_once 'psipr.php';
+require_once 'psipr/psipr.php';
 
-use getParams as uno;
-use getURL as dos;
+use getURL as PEAR;
 
-uno\getURL::init();
-echo '<br>';
-dos\getURL::init();
+PEAR\getURL::init();
