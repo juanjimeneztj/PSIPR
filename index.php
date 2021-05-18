@@ -1,7 +1,8 @@
 <?php
-
 require_once 'psipr.php';
 
-getURL\getURL::init();
+use getURL as test;
+
+test\getURL::init();
 
 // Silence is golder
