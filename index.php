@@ -1,7 +1,7 @@
 <?php
 require_once 'psipr.php';
 
-use getURL as test;
+use UTILS as test;
 
 test\getURL::init();
 
