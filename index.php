@@ -1,10 +1,9 @@
 <?php
 require_once 'psipr.php';
 
-use utils as PEAR;
+use getParams as uno;
+use getURL as dos;
 
-PEAR\getURL::init();
+uno\getURL::init();
 echo '<br>';
-PEAR\getParams::init();
-
-// Silence is golder
+dos\getURL::init();
