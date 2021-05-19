@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace Nowy\getURL;
 class getURL{
     protected $url;
     protected $method;

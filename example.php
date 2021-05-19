@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-$sip = new App\getURL([
+$sip = new Nowy\getURL\getURL([
     'url'    => 'https://google.com',
     'method' => 'GET',
     'data'   => [
@@ -10,3 +10,7 @@ $sip = new App\getURL([
     ]
 ]);
 echo $sip->send();
+
+$test = new Nowy\Params\getParams();
+$test->init();
+
