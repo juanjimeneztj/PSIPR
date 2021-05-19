@@ -1,4 +1,5 @@
 <?php
-require_once 'psipr/psipr.php';
+require_once 'psipr.php';
 
-getURL\getURL::init();
+$test = new getURL();
+echo $test->init();
