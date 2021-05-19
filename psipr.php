@@ -1,5 +1,8 @@
 <?php
 
-spl_autoload_register(function ($nombre_clase) {
-    include_once __DIR__.'/class/'.$nombre_clase . '.php';
+spl_autoload_register(function($className) {
+
+	$className = explode("\\",$className);
+	require __DIR__ . '/class/' . $className[1] . '.php';
+
 });
