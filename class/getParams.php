@@ -18,7 +18,7 @@ class getParams{
 
     public static function fieldEmail($email){
         $valid = false;
-        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
         if((!filter_var($email, FILTER_VALIDATE_EMAIL) === false)&&(preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i",$email))) {
             return true;
         }
