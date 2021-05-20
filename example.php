@@ -11,6 +11,13 @@ $sip = new Nowy\getURL\getURL([
 ]);
 echo $sip->send();
 
+// $test = new Nowy\Params\getParams();
+// if($test->url('http://test.com')){
+//     echo 'si es url buena';
+// }else{
+//     echo 'mala url';
+// }
+
 use Nowy\Params\getParams as ValidateData;
 
 if(ValidateData::url('http://test.com')){
@@ -18,4 +25,3 @@ if(ValidateData::url('http://test.com')){
 }else{
     echo 'mala url';
 }
-
