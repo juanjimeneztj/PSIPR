@@ -19,9 +19,16 @@ echo $sip->send();
 // }
 
 use Nowy\Params\getParams as ValidateData;
-
+echo '<br>';
 if(ValidateData::url('http://test.com')){
     echo 'si es url buena';
 }else{
     echo 'mala url';
+}
+
+echo '<br>';
+if(ValidateData::fieldEmail('noegomez@c.ca')){
+    echo 'si correo electronico valido';
+}else{
+    echo 'No es correo electronico valido';
 }
